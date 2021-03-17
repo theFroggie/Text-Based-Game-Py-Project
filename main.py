@@ -2,6 +2,9 @@
 from cogs import NewGame, LoadGame
 import os
 
+# Variables
+Is_Singleplayer = False
+
 
 # Functions
 def Start():
@@ -35,6 +38,9 @@ def Start():
     else:
         Start()
 
+
+def SendBool(Newbool):
+    Newbool = Is_Singleplayer
 
 # Starts the function.
 Start()
