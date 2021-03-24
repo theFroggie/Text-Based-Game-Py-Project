@@ -4,16 +4,16 @@ import json
 
 # Functions
 def CreateJsonSingleplayer(Username):
-    saveFile = {Username: {
-        "username": Username,
-        "health": 100,
-        "damage": 5,
-        "score": {
+    saveFileSolo = {Username: {
+        "username1": Username,
+        "health1": 100,
+        "damage1": 5,
+        "score1": {
             "enemy_killed": 0,
             "time_played": 0,
             "total_score": 0
         },
-        "inventory": {
+        "inventory1": {
             "potions": 2,
             "special_attacks": {
                 "sp_attack_01": {
@@ -32,14 +32,69 @@ def CreateJsonSingleplayer(Username):
         }
     }}
 
-    s = json.dumps(saveFile)
+    s = json.dumps(saveFileSolo)
 
-    with open("../saves/" + Username + "_savefile.json", "x") as f:
+    with open("./saves/singleplayer/" + Username + "_savefile.json", "x") as f:
         f.write(s)
+        f.close()
 
 
-    print(saveFile)
-    print(type(saveFile))
+def CreateJsonCoop(Username1, Username2):
+    saveFileCoop = {Username1: {
+        "username1": Username1,
+        "health1": 100,
+        "damage1": 5,
+        "score1": {
+            "enemy_killed": 0,
+            "time_played": 0,
+            "total_score": 0
+        },
+        "inventory1": {
+            "potions": 2,
+            "special_attacks": {
+                "sp_attack_01": {
+                    "name": "null",
+                    "damage": 10
+                },
+                "sp_attack_02": {
+                    "name": "null",
+                    "damage": 10
+                },
+                "sp_attack_03": {
+                    "name": "null",
+                    "damage": 10
+                },
+            }
+        },
+        "username2": Username2,
+        "health2": 100,
+        "damage2": 5,
+        "score2": {
+            "enemy_killed": 0,
+            "time_played": 0,
+            "total_score": 0
+        },
+        "inventory2": {
+            "potions": 2,
+            "special_attacks": {
+                "sp_attack_01": {
+                    "name": "null",
+                    "damage": 10
+                },
+                "sp_attack_02": {
+                    "name": "null",
+                    "damage": 10
+                },
+                "sp_attack_03": {
+                    "name": "null",
+                    "damage": 10
+                },
+            }
+        }
+    }}
 
+    s = json.dumps(saveFileCoop)
 
-CreateJsonSingleplayer("Froggie")
+    with open("./saves/multiplayer/" + Username1 + "_savefile.json", "x") as f:
+        f.write(s)
+        f.close()

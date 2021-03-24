@@ -1,0 +1,34 @@
+{
+  "1": {
+    "name": "Fireball",
+    "damage": 10
+  },
+  "2": {
+    "name": "Blizzard",
+    "damage": 15
+  },
+  "3": {
+    "name": "Bolt",
+    "damage": 12
+  },
+  "4": {
+    "name": "QuickAttack",
+    "damage": 7
+  },
+  "5": {
+    "name": "Meteor",
+    "damage": 20
+  },
+  "6": {
+    "name": "throw",
+    "damage": 3
+  },
+  "7": {
+    "name": "MagicTrick",
+    "damage": 8
+  },
+  "8": {
+    "name": "MrFaulkner",
+    "damage": 45
+  }
+}

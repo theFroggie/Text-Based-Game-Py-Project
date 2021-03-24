@@ -1,2 +1,2 @@
-def LoadGame():
+def LoadGameFunc():
     print("Load game")
