@@ -3,9 +3,9 @@ import json
 
 
 # Functions
-def CreateJsonSingleplayer(Username):
-    saveFileSolo = {Username: {
-        "username1": Username,
+def CreateJsonSingleplayer(Username1):
+    saveFileSolo = {Username1: {
+        "username1": Username1,
         "health1": 100,
         "damage1": 5,
         "score1": {
@@ -34,7 +34,7 @@ def CreateJsonSingleplayer(Username):
 
     s = json.dumps(saveFileSolo)
 
-    with open("./saves/singleplayer/" + Username + "_savefile.json", "x") as f:
+    with open("./saves/singleplayer/" + Username1 + "_savefile.json", "x") as f:
         f.write(s)
         f.close()
 
