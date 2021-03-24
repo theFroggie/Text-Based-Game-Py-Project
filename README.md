@@ -1,7 +1,6 @@
 # Python Text Based Game PROJECT 
 
 [![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
 
 ## About The Project
 
