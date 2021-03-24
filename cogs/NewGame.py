@@ -12,9 +12,10 @@ def NewGameFunc(Is_Singleplayer):
         # Start procedure if in singleplayer.
         if Is_Singleplayer:
 
+            # Ask for username of player 1
             Ask_Username1 = input("What is your name player? ")
-            print(Ask_Username1)
 
+            # Ask for confirmation that the username is correct
             Confirm_Username = input(
                 "confirm that '" + Ask_Username1 + "' is your username, you cannot change it. (y/n) ")
 
@@ -31,12 +32,12 @@ def NewGameFunc(Is_Singleplayer):
 
         # Start procedure if in co-op.
         elif not Is_Singleplayer:
+            # Ask for username of player 1
             Ask_Username1 = input("What is your name player 1? ")
-            print(Ask_Username1)
-
+            # Ask for username of player 2
             Ask_Username2 = input("What is your name player 2? ")
-            print(Ask_Username2)
 
+            # Ask for confirmation that the username is correct
             Confirm_Username = input(
                 "confirm that `" + Ask_Username1 + "` and `" + Ask_Username2 + "` are your usernames, "
                                                                                "you cannot change "
