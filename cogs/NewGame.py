@@ -53,3 +53,7 @@ def NewGameFunc(Is_Singleplayer):
                 # Send back at the start of the function.
                 os.system("cls")
                 continue
+
+
+if __name__ == "__main__":
+    NewGameFunc()

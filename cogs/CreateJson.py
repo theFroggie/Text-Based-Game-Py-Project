@@ -98,3 +98,8 @@ def CreateJsonCoop(Username1, Username2):
     with open("./saves/multiplayer/" + Username1 + "_savefile.json", "x") as f:
         f.write(s)
         f.close()
+
+
+if __name__ == "__main__":
+    CreateJsonSingleplayer()
+    CreateJsonCoop()

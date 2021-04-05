@@ -48,4 +48,5 @@ def StartFunc():
 
 
 # Starts the function.
-StartFunc()
+if __name__ == "__main__":
+    StartFunc()
